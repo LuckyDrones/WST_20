@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Meta datan laddas in vilket som visar vilket data som datan kan använda-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--script för att ansluta ett javascript dokumnet-->
+  <script src="https://kit.fontawesome.com/ed539cc9c0.js" crossorigin="anonymous"></script>
+  <!--link för att ansluta olika typer utav document och databaser för att få tillgång till img och styling-->
+  <link href="CSS/Main.css" rel="stylesheet" type="text/css">
+  <!--Title för att ändra vad som visas i navigerings fältet på en webbläsare-->
+  <title>Webpage</title>
+  <!--Bild som visas brevid navigerings fältet-->
+  <link rel="icon" href="./CSS/img/Satan.png" type="image/png">
+</head>
+<!--Satt att den laddar en JS function när body laddas in i webbläsaren-->
+<body onload="welcomeMessage()">
+  <!--Det som ska synas på toppen-->
+  <header>
+    <!--Top Navbar-->
+    <nav>
+      <ul class="bg-topnav">
+        <li><a class="active" href="#" onclick="return false;"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="News.html"><i class="fas fa-newspaper"></i> News</a></li>
+        <li><a href="Contact.html"><i class="fas fa-address-card"></i> Contact</a></li>
+        <li class="active"><a href="index.php">Login</a></li>
+        <li class="active"><a>Sign in</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div>
+    <main>
+      <h2 id="welcomeMessage"></h2>
+      <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
+      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Nibh sed pulvinar proin gravida hendrerit lectus. Fusce ut placerat orci nulla.</h2>
+      <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Est ante in nibh mauris cursus mattis. Augue lacus viverra vitae congue eu consequat ac. 
+          Nulla malesuada pellentesque elit eget gravida cum sociis. Eu volutpat odio facilisis mauris.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </article>
+      <input type="button" onclick="loginCheck()" name="loginCheck" value="Status Check" class="button">
+    </main>
+  </div>
+  <footer>
+    <p>&copy 2020  Theo Martinsson Lucky Fake Company</p>
+  </footer>
+  
+</body>
+<!--För att länka min Javascript till sidan så att den inte stör något annat medan det laddas in-->
+<script src="javascript/Javascript.js"></script>
+</html>
